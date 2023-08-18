@@ -7,7 +7,9 @@
 #git push -u origin main
 
 #git add nome_do arqivo.py
-
+#git add nome_arquivo.jr
+#git commit -m "Defina a alteração feita com um titulo"
+#git push
 
 idade = int(input("Digite sua idade: "))
 
