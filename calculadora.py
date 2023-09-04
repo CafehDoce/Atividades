@@ -1,7 +1,18 @@
-idade = int(input("Digite sua idade: "))
+nome = input ("Digite seu nome: ")
+print ("Seja bem vindo a calculadora, {}!" .format(nome))
 
-if idade >= 18:
-    print ("Você é maior de idade.")
+n1 = int (input ("Digite um número: "))
+n2 = int (input ("Digite outro número: "))
+calculo = input ("Opções de cálculo: +,-,*,/: ")
 
-else:
-    print ("Você é menor de idade.")
+if calculo == "+" :
+    print ("Seu resultado é:", n1 + n2)
+
+if calculo == "-":
+    print ("Seu resuldado é", n1 - n2)
+
+if calculo == "*":
+    print ("Seu resuldado é", n1 * n2)
+
+if calculo == "/":
+    print ("Seu resuldado é", n1 / n2)
