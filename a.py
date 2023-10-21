@@ -1,25 +1,23 @@
+#py -m venv ambiente
+#./ambiente/Scripts/activate
 
-class Estudante:
-    def __init__ (self, nome, idade):
-        self.nome= nome
-        self.idade = idade
+class Endereco:
+    def __init__(self, rua, cidade):
+        self.rua = rua
+        self.cidade = cidade
+
+    def mostrar_endereco(self):
+        return f"{self.rua}. {self.cidade}"
     
-    def apresentar(self):
-        print(f"O nome do estudante é {self.nome} e sua idade é {self.idade}.")
+class Pessoa:
+    def __init__(self, nome, endereco):
+        self.nome = nome
+        self.endereco = endereco
 
-estudante1 = Estudante ("Isa", 18)
-estudante1.apresentar()
+    def mostrar_informacoes(self):
+        return f"{self.nome} mora em {self.endereco.mostrar_endereco{}}"
 
+endereco_maria = Endereco ("Av. principal", "São Paulo")
+maria = Pessoa ("Maria", endereco_maria)
 
-class Livro:
-    def __init__(self, titulo, autor, ano_publicado):
-        self.titulo = titulo
-        self.autor = autor
-        self.ano_publicado = ano_publicado
-    
-    def descricao (self):
-        print (f"O livro entitulado {self.titulo} foi escrito pelo autor {self.autor} e foi publicado em {self.ano_publicado}.")
-
-livro1 = Livro ("Meu livro, eu que escrevi,", "Dani,", "13/05/2004")
-livro1.descricao()
-
+print(maria.mostrar_informacoes{})
