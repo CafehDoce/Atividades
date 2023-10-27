@@ -15,9 +15,9 @@ class Pessoa:
         self.endereco = endereco
 
     def mostrar_informacoes(self):
-        return f"{self.nome} mora em {self.endereco.mostrar_endereco{}}"
+        return f"{self.nome} mora em {self.endereco.mostrar_endereco()}"
 
 endereco_maria = Endereco ("Av. principal", "São Paulo")
 maria = Pessoa ("Maria", endereco_maria)
 
-print(maria.mostrar_informacoes{})
+print(maria.mostrar_informacoes())
